@@ -28,7 +28,7 @@ http.createServer((request, response) => {
 
         // Respond to the client
         response.writeHead(200, { 'Content-Type': 'text/plain' });
-        response.end('Data received successfully\n');
+        response.end('Data received successfully');
       } catch (error) {
         console.error('Error parsing JSON:', error);
 
@@ -42,5 +42,5 @@ http.createServer((request, response) => {
     response.writeHead(405, { 'Content-Type': 'text/plain' });
     response.end('Method Not Allowed\n');
   }
-}).listen(8080);
+}).listen(4317);
 
